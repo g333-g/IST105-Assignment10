@@ -1,0 +1,16 @@
+<h2>Search History</h2>
+<table>
+  <tr>
+    <th>Timestamp</th>
+    <th>Continent</th>
+    <th>Results Count</th>
+  </tr>
+  {% for h in history %}
+  <tr>
+    <td>{{ h.search_timestamp }}</td>
+    <td>{{ h.continent }}</td>
+    <td>{{ h.results|length }}</td>
+  </tr>
+  {% endfor %}
+</table>
+

@@ -1,0 +1,20 @@
+<h2>Results</h2>
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Capital</th>
+    <th>Population</th>
+    <th>Temp (°C)</th>
+    <th>Weather</th>
+  </tr>
+  {% for item in results %}
+  <tr>
+    <td>{{ item.country }}</td>
+    <td>{{ item.capital }}</td>
+    <td>{{ item.population }}</td>
+    <td>{{ item.temperature_celsius }}</td>
+    <td>{{ item.weather_description }}</td>
+  </tr>
+  {% endfor %}
+</table>
+

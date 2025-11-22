@@ -1,0 +1,6 @@
+<h2>Search History</h2>
+<ul>
+{% for h in history %}
+  <li>{{ h.search_timestamp }} - {{ h.continent }}</li>
+{% endfor %}
+</ul>
